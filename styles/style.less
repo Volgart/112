@@ -1,0 +1,255 @@
+@import "variable.less";
+
+body {
+	background-color: @mybackground-color;
+	font-size: 1em;
+	line-height: 1.1;
+	text-align: left;
+	min-height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.button{
+	text-decoration:none;	
+	text-align:center; 
+	padding: 0px 30px; 
+	border:solid 4px #6b6b6b; 
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px; 
+	border-radius: 50px; 
+	font:40px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:@color-menu; 
+	text-shadow: 0 0 2px #000;
+	background-color:#ffc4c5; 
+	background-image: -moz-linear-gradient(top, #ffc4c5, #e4938f, #ec220e, @maincolor); 
+	background-image: -webkit-linear-gradient(top, #ffc4c5, #e4938f, #ec220e, @maincolor); 
+	background-image: -o-linear-gradient(top, #ffc4c5, #e4938f, #ec220e, @maincolor);
+	background-image: -ms-linear-gradient(top, #ffc4c5, #e4938f, #ec220e, @maincolor);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@maincolor', endColorstr='@maincolor',GradientType=0 );
+	background-image: linear-gradient(top, #ffc4c5 0% ,@maincolor 100%);   
+	-webkit-box-shadow:inset 0px 0px 5px @color-menu;  -moz-box-shadow:inset 0px 0px 5px @color-menu; box-shadow:inset 0px 0px 5px @color-menu;  
+}
+
+.clearfix {
+	zoom: 1;
+	&:before, &:after {
+	content: ""; display: table;
+	}
+	&:after {
+	clear: both;
+	}
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a:active,a:hover,input:focus,input:hover,textarea:focus,textarea:hover {
+	outline:0;
+}
+
+a {
+	font-weight: bold;
+	color:@a_color;
+	text-decoration:none;
+}
+
+a:visited {
+	color:@mybackground-color;
+	text-decoration:underline;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+a img {
+	position: relative;
+	top: -25px;
+	left: 50px;
+	height: 170px;
+	border:0
+}
+
+a:active,a:hover,a:focus {
+	color: @maincolor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+
+h1 {
+	font-size: 18px;
+	padding: 25px;
+}
+
+h2 {
+font-size: 50px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+.clr {
+	clear: both;
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+header, footer {
+	display: block;
+	vertical-align: middle;
+}
+
+header {
+	background-color: @color-menu;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+.center-block-main {
+	margin: 0 auto;
+	max-width: 1200px;
+	background-color: @color-menu;
+}
+
+.logo {
+	
+	float: left;
+}
+
+.menu {
+	margin: 0;
+	padding: 23px 100px;
+}
+
+.menu li {
+	float: left;
+	font-weight: 600;
+}
+
+.menu li a {
+	color: @color-menu;
+	text-decoration: none;
+	border-bottom: 3px solid @maincolor;
+}
+
+.menu li a:hover {
+	color: @color-menu;
+	border-bottom: 3px solid @color-menu;
+}
+
+.mh{
+	height: 64px;
+	background: linear-gradient(90deg, @color-menu 60%, @maincolor 40%);
+}
+
+.head1{
+	background-color: @color-menu;
+	width: 60%;
+	height: 64px;
+	text-align: center;
+	float: left;
+}
+
+.head2{
+	background-image: url(../img/menu.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	width: 40%;
+	height: 64px;
+	float: left;
+	}
+
+.hh {
+	background: #efefef;
+	height: 190px;
+}
+
+.center-block-vertical {
+	margin: auto;
+	padding: 80px;
+}
+.head3{
+	background: #efefef;
+	background-image: url(../img/head.png);
+	background-repeat: no-repeat;
+	background-size: 230px auto;
+	background-position: right;
+	height: 190px;
+	width: 100%;
+	text-align: center;
+}
+
+main {
+	display: block;
+	margin: 0 auto;
+	margin-top: 275px;
+	max-width: 1200px;
+	border-radius: 5px;
+}
+
+.content {
+	padding: 20px;
+	border-radius: 5px;
+	background-color: @color-menu;
+	float: left;
+	box-shadow: 0 0 15px @a_color;
+}
+
+hr {
+	width: 75%;
+	color: @maincolor;
+}
+
+.t1 {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.t2 {
+	width: 75%;
+	text-indent: 3em;
+	text-align: justify;
+	float: left;
+}
+
+.t3 {
+	width: 25%;
+	color: @maincolor;
+	text-align: left;
+	float: left;
+}
+
+.t4 {
+	width: 12.5%;
+	text-align: center;
+	float: left;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: @color-menu;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 8px -5px @mybackground-color;
+    a {
+        color:@mybackground-color;
+    }
+}
